@@ -1,0 +1,37 @@
+# Core Python dependencies for SegmentDetectGPT.
+# Install with:
+#   pip install -r requirements.txt
+#
+# The local ruptures fork is not listed as a plain requirement because its
+# editable build currently needs the same setuptools-scm override used in
+# setup.sh:
+#   SETUPTOOLS_SCM_PRETEND_VERSION_FOR_RUPTURES=0.0.0 pip install -e ./ruptures
+#
+# classifier/detect_biscope.py also expects an external BiScope module that is
+# not vendored in this repository, so it still needs separate setup if you use
+# that path.
+#
+# SegFormer-specific experiments maintain a separate environment file under
+# multi_scripts/SegFormer/requirements.txt.
+
+# Numerical computing and reporting
+numpy
+scipy
+scikit-learn
+matplotlib
+pandas
+tqdm
+
+# Model and dataset stack
+torch
+transformers
+huggingface-hub
+datasets
+peft
+safetensors
+sentencepiece
+segeval
+
+# Text preprocessing
+spacy
+nltk

@@ -4,7 +4,7 @@
 
 This repository contains the official implementation of **[Segmenting Human-LLM Co-authored Text via Change Point Detection](https://arxiv.org/abs/2605.03723)** (accepted at **STAI-X 2026**).  
 
-L2D provides a **change point detection** viewpoint on segmenting the human-LLM co-authored text (**Figure 1** 🧠). We leverage the hetergeneity among sengment to design our method, achieves robust and state-of-the-art performance across a wide range of LLMs and datasets (**Figure 2** 🏆).
+Our method provides a **change point detection** viewpoint on segmenting the human-LLM co-authored text (**Figure 1** 🧠). We leverage the hetergeneity among segments to design our method, achieves robust and state-of-the-art performance across a wide range of settings.
 
 <figure style="margin: 0;">
   <p align="center" style="margin: 0;">
@@ -92,7 +92,6 @@ The `scripts/` directory contains implementations of various LLM segmentation lo
 | **PaLD**              | `detect_pald.py` | [arXiv:2401.12070](https://arxiv.org/abs/2401.12070)            |
 | **TextTilling** | `detect_texttilling.py`    | [arXiv:1908.09203](https://arxiv.org/abs/1908.09203)            |
 
-Additional baselines can be found in a comprehensive github repo: **[AdaDetectGPT](https://github.com/Mamba413/AdaDetectGPT)**.
 
 ### Reproducibility guide
 - `exp_longdocs.sh`: generate results of Figure 1, then run `python exp_longdocs/plot_length.py` to get Figure 1
